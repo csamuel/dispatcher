@@ -1,0 +1,20 @@
+<% title "Endpoint" %>
+
+<p>
+  <strong>extension:</strong>
+  <%= @endpoint.extension %>
+</p>
+<p>
+  <strong>name:</strong>
+  <%= @endpoint.name %>
+</p>
+<p>
+  <strong>url:</strong>
+  <%= @endpoint.url %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_endpoint_path(@endpoint) %> |
+  <%= link_to "Destroy", @endpoint, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", endpoints_path %>
+</p>

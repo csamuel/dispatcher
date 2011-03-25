@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<grammar version="1.0" xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en-us" mode="dtmf" root="___ROOT___">
+
+  <rule id="___ROOT___" scope="public">
+    <one-of>
+      <item>
+        <item repeat="1-4">
+          <ruleref uri="#DIGITS" />
+        </item>
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="DIGITS">
+    <one-of>
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+    </one-of>
+   </rule>
+</grammar>

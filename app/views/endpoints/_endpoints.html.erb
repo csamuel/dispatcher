@@ -1,0 +1,20 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= sortable "extension" %></th>
+    <th><%= sortable "name" %></th>
+    <th><%= sortable "url" %></th>
+  </tr>
+  <% for endpoint in @endpoints %>
+    <tr>
+      <td><%= endpoint.extension %></td>
+      <td><%= endpoint.name %></td>
+      <td><%= endpoint.url %></td>
+	  <td><%= link_to "Show", endpoint %></td>
+      <td><%= link_to "Edit", edit_endpoint_path(endpoint) %></td>
+      <td><%= link_to "Destroy", endpoint, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<%= will_paginate @endpoints %>

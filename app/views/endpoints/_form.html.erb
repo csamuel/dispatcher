@@ -1,0 +1,16 @@
+<%= form_for @endpoint do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :extension %><br />
+    <%= f.text_field :extension %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
