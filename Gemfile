@@ -13,6 +13,7 @@ gem 'nifty-generators'
 gem 'will_paginate', '3.0.pre2'
 gem 'jquery-rails'
 gem 'high_voltage'
+gem 'warbler'
 
 platforms :jruby do
   gem 'activerecord-jdbc-adapter'
