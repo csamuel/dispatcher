@@ -3,7 +3,7 @@ class EndpointsController < ApplicationController
   helper_method :sort_column, :sort_direction
   
   def index
-    @endpoints = Endpoint.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 100, :page => params[:page])
+    @endpoints = Endpoint.search(params[:search]).order(sort_column + " " + sort_direction)
   end
   
   def show

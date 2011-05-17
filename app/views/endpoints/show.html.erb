@@ -16,5 +16,6 @@
 <p>
   <%= link_to "Edit", edit_endpoint_path(@endpoint) %> |
   <%= link_to "Destroy", @endpoint, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", endpoints_path %>
+  <%= link_to "View All", endpoints_path %> |
+  <%= link_to "New Endpoint", new_endpoint_path %>
 </p>
