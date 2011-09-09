@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'high_voltage'
 gem 'warbler'
 
+
 platforms :jruby do
   gem 'activerecord-jdbc-adapter'
 
@@ -26,6 +27,10 @@ platforms :jruby do
 
   # SQLite JDBC adapter
   gem 'jdbc-sqlite3', :require => false
+  
+  gem 'jruby-openssl'
+  gem 'jdbc-mysql', :require => false
+  gem 'trinidad'
 
   # Derby JDBC adapter
   #gem 'activerecord-jdbcderby-adapter'
